@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #e91e63;
+}
+
+body .continer {
+    position: relative;
+    top: 65px;
+    color: #fff;
+    /* z-index: -30; */
+    z-index: 0;
+    margin: 0 2px;
+    /* padding: 0 10px; */
+}
+
+.subcontainer {
+    background: #ffffffdb;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.subcontainer .content {
+    position: relative;
+    max-width: 900px;
+    z-index: 10;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.subcontainer .content h3 {
+    font-size: 2em;
+    color: #333;
+    font-weight: 300;
+    transition: 0.5s;
+}
+
+.subcontainer .content h2 {
+    font-size: 5em;
+    color: #333;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.subcontainer .content h2 br{
+    display: none;
+}
+.subcontainer .content h2 span {
+    color: #e91e63;
+}
+
+.subcontainer .content p {
+    font-size: 1.2em;
+    color: #666;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+.subcontainer .content a{
+    text-decoration: none;
+}
+.subcontainer .content button {
+    position: relative;
+    background: #e91e63;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 15px 35px;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    margin-right: 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: 0.5s;
+    margin: auto 5px;
+    cursor: pointer;
+}
+
+.subcontainer .content button.chat {
+    background: transparent;
+    color: #333;
+    border: 1px solid #e91e63;
+}
+
+.subcontainer .content button.chat i {
+    position: relative;
+    /* top: 5px; */
+    color: #e91e63;
+    font-size: 1em;
+}
+
+.subcontainer .content button.chat i span {
+    margin: 5px;
+}
+
+.subcontainer img {
+    width: 300px;
+    border-radius: 18px;
+    border: 1px solid #e91e63;
+    margin: 10px;
+}
+.subcontainer .content .socialIconShare{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    /* padding: 100px; */
+}
+
+
+
+/* -------------- Screen Size ------------------- */
+
+@media (max-width:992px) {
+    body .continer {
+        top: 50px;
+    }
+
+    .subcontainer {
+        display: grid;
+    }
+
+    .subcontainer .content {
+        margin-top: 5px;
+    }
+
+    .subcontainer .content h3 {
+        font-size: 1.5em;
+    }
+
+    .subcontainer .content h2 {
+        font-size: 3em;
+    }
+    .subcontainer .content h2.name1 {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+    }
+.subcontainer .content h2 br{
+    display: block;
+}
+    .subcontainer .content p {
+        font-size: 1em;
+    }
+
+    .subcontainer img {
+        margin: 10px auto;
+    }
+}

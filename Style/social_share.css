@@ -1,0 +1,65 @@
+
+
+.socialContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    position: relative;
+    
+}
+
+.socialContainer .section {
+    background-color: #000;
+    color: #fff;
+    height: 36px;
+    width: 36px;
+    margin: 0px 7px 0px;
+    padding: 5px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    box-shadow: 5px 5px 8px rgb(0, 0, 0, 0.9);
+    transition: width 300ms ease-in-out 0s;
+    background-color: 300ms linear 200ms;
+}
+
+.socialContainer a {
+    text-decoration: none;
+}
+.socialContainer .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    aspect-ratio: 1/1;
+}
+.socialContainer i{
+    font-size: 26px;
+}
+
+.socialContainer .section:hover {
+    transition: all .3s;
+}
+
+.socialContainer .facebook:hover {
+    background: #1877F2;
+}
+
+.socialContainer .instagram:hover {
+    background: #de1483;
+}
+
+
+.socialContainer .telegram:hover {
+    background: #0088cc;
+}
+
+.socialContainer .linkedin:hover {
+    background: #0077B5;
+}
+.socialContainer .youtube:hover {
+    background: #cd201f;
+}

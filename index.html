@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukamal Manna Portfolio</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="shortcut icon" href="/Image/Manna_fav.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a58aa1e9ea.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#header").load("/pages/header.html");
+            $("#footer").load("/pages/footer.html");
+            $("#social_share").load("/pages/social_share.html");
+        })
+    </script>
+
+</head>
+
+<body>
+    <!-- ------------loading Header---------- -->
+    <div id="header"></div>
+
+    <div class="continer">
+        <div class="subcontainer">
+            <div class="content">
+                <h3>Hey_</h3>
+                <h2>I am <br> <span id="text"></span></h2>
+                <p>Result-driven and detail-oriented individual with strong communication skills. I aim to leverage my
+                    lead generation and sales skills while expanding my knowledge. </p>
+                <a href="https://www.linkedin.com/in/imsukamalmanna" target="_blank"><button>Hire Me</button>
+                </a>
+                <a href="https://www.linkedin.com/in/imsukamalmanna" target="_blank">
+                    <button class="chat">
+                        <i class="fa-regular fa-comments"><span></span></i>Let's Chat</button>
+                </a>
+            </div>
+            <img src="https://lh3.googleusercontent.com/d/1XGEugkMGNZLtkQL9tg2Geno81gkofMgv" alt="">
+
+        </div>
+        <div class="subcontainer">
+
+            <img src="https://lh3.googleusercontent.com/d/1hIwLWtThRuEg3JteynS_2F70NK_nDTjF" alt="">
+            <div class="content">
+                <h3>This is  my social media accounts</h3>
+                <h2 class="name1">SUKAMAL MANNA</h2>
+                
+                <!-- ----------loading social icons---------- -->
+                <div class="socialIconShare" id="social_share"></div>
+            </div>
+            
+
+
+        <!-- ----------loading social icons---------- -->
+        <!-- <div class="socialIconShare" id="social_share"></div> -->
+
+
+        <!-- ---- Main Continer ----- -->
+    </div>
+
+
+
+    <!-- --------------loading Footer------------------- -->
+
+    <div id="footer"></div>
+
+
+    <!-- --------loading Text for Intro-------- -->
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+
+    <script>
+        let typingText = new Typed("#text", {
+            strings: ["SUKAMAL", "MANNA", "MBA", "MARKETING", "Designer", "Youtuber"],
+            loop: true,
+            typeSpeed: 50,
+        })
+
+
+    </script>
+
+</body>
+
+</html>
