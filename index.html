@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Knowledge Quiz</title>
+
+    <style>
+        body {
+            min-height: 100vh;
+            background: linear-gradient(to bottom right, #1e3a8a, #4c1d95, #312e81);
+        }
+
+        body .container {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        body .container div {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        body .container div h1 {
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 0.5rem;
+
+        }
+
+        body .container div#quizContainer {
+            max-width: 42rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1.5rem;
+        }
+
+        body .container div#quizContainer .question-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+        }
+
+        body .container div#quizContainer .question-card h3 {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        /* body .container div#quizContainer .question-card div {
+            margin-top: 0.5rem;
+        
+        } */
+
+        body .container div#quizContainer .question-card div .option-btn {
+            width: 100%;
+            text-align: left;
+            padding: 0.75rem;
+            /* background-color: rgba(255, 255, 255, 0.011); */
+            /* background: rgba(255, 255, 255, 0.20); */
+            border-radius: 0.25rem;
+            color: #ffffff;
+            margin-top: 0.5rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        body .container div#quizContainer .question-card div .option-btn:hover:not([disabled]) {
+            background-color: rgba(255, 255, 255, 0.20);
+        }
+
+        .btn:disabled {
+            cursor: no-drop;
+        }
+
+        body .container div #resetBtn {
+            background-color: #2563eb;
+            color: white;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            border-radius: 0.25rem;
+            transition: background-color 0.2s;
+        }
+
+        body .container div #resetBtn:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="">
+    <div class="container">
+        <!-- Header -->
+        <div class="">
+            <h1 class="">Computer Quiz</h1>
+            <!-- <p class="text-blue-200">Score: <span id="score">0</span> / <span id="total">5</span></p> -->
+        </div>
+
+        <!-- Quiz Container -->
+        <div id="quizContainer">
+            <!-- Question 1 -->
+            <div class="question-card" data-question="1">
+                <h3>1. What does CPU stand for?</h3>
+                <div class="">
+                    <button class="option-btn bg-white/5" data-answer="true">
+                        Central Processing Unit
+                    </button>
+                    <button class="option-btn bg-white/5" data-answer="false">
+                        Computer Processing Unit
+                    </button>
+                    <button class="option-btn bg-white/5" data-answer="false">
+                        Central Program Unit
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question-card" data-question="2">
+                <h3 class="">2. What does RAM stand for?</h3>
+                <div class="">
+                    <button class="option-btn bg-white/5" data-answer="true">
+                        Random Access Memory
+                    </button>
+                    <button class="option-btn bg-white/5" data-answer="false">
+                        Read Access Memory
+                    </button>
+                    <button class="option-btn bg-white/5 " data-answer="false">
+                        Rapid Access Memory
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question-card" data-question="3">
+                <h3 class="">3. Which is a web browser?</h3>
+                <div class="">
+                    <button class="option-btn bg-white/5" data-answer="false">
+                        Microsoft Word
+                    </button>
+                    <button class="option-btn bg-white/5 " data-answer="true">
+                        Google Chrome
+                    </button>
+                    <button class="option-btn bg-white/5" data-answer="false">
+                        Photoshop
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question-card" data-question="4">
+                <h3 class="">4. What does HTML stand for?</h3>
+                <div class="space-y-2">
+                    <button class="option-btn bg-white/5 " data-answer="true">
+                        HyperText Markup Language
+                    </button>
+                    <button class="option-btn bg-white/5 " data-answer="false">
+                        High Tech Modern Language
+                    </button>
+                    <button class="option-btn bg-white/5 " data-answer="false">
+                        Home Tool Markup Language
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question-card" data-question="5">
+                <h3 class="">5. Which is an operating system?</h3>
+                <div class="space-y-2">
+                    <button class="option-btn bg-white/5 " data-answer="false">
+                        Excel
+                    </button>
+                    <button class="option-btn bg-white/5 " data-answer="true">
+                        Windows
+                    </button>
+                    <button class="option-btn bg-white/5 " data-answer="false">
+                        Firefox
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Reset Button -->
+        <div class="">
+            <button id="resetBtn" class="">
+                Reset Quiz
+            </button>
+        </div>
+
+    </div>
+
+    <script>
+
+        let answeredQuestions = new Set();
+
+        // Add click handlers to all option buttons
+        document.querySelectorAll('.option-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const questionCard = this.closest('.question-card');
+                const questionNum = questionCard.dataset.question;
+                const isCorrect = this.dataset.answer === 'true';
+                // Prevent multiple answers for the same question
+                if (answeredQuestions.has(questionNum)) {
+                    return;
+                }
+
+                // Mark question as answered
+                answeredQuestions.add(questionNum);
+
+                // Disable all buttons in this question
+                questionCard.querySelectorAll('.option-btn').forEach(btn => {
+                    btn.disabled = true;
+                    btn.classList.remove('hover:bg-white/20');
+                });
+
+                // Show visual feedback
+                if (isCorrect) {
+                    this.classList.add('bg-green-500/30', 'border-2', 'border-green-400');
+                    // score++;
+                } else {
+                    this.classList.add('bg-red-500/30', 'border-2', 'border-red-400');
+
+                    // Highlight the correct answer
+                    questionCard.querySelectorAll('.option-btn').forEach(btn => {
+                        if (btn.dataset.answer === 'true') {
+                            btn.classList.add('bg-green-500/30', 'border-2', 'border-green-400');
+                        }
+                    });
+                }
+
+                
+            });
+        });
+
+
+        // Reset functionality
+        document.getElementById('resetBtn').addEventListener('click', function () {
+            // score = 0;
+            answeredQuestions.clear();
+
+            // Reset all buttons
+            document.querySelectorAll('.question-card').forEach(card => {
+                card.querySelectorAll('.option-btn').forEach(btn => {
+                    btn.disabled = false;
+                    btn.className = 'option-btn w-full text-left p-3 bg-white/5 hover:bg-white/20 rounded text-white';
+                });
+            });
+
+           
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+    </script>
+
+</body>
+
+</html>
